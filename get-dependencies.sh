@@ -9,7 +9,7 @@ echo "---------------------------------------------------------------"
 if [ "$ARCH" = "aarch64" ]; then
     wget https://umea.mirror.pkgbuild.com/extra/os/x86_64/edk2-ovmf-202508-1-any.pkg.tar.zst
     wget https://umea.mirror.pkgbuild.com/extra/os/x86_64/seabios-1.17.0-2-any.pkg.tar.zst
-    pacman -U seabios-*.pkg.tar.zst edk2-ovmf-*.pkg.tar.zst
+    pacman -U seabios-*.pkg.tar.zst edk2-ovmf-*.pkg.tar.zst --noconfirm
 fi
 pacman -Syu --noconfirm      \
     gtk3                     \
