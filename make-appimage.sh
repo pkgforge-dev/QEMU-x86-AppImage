@@ -3,7 +3,7 @@
 set -eu
 
 ARCH=$(uname -m)
-VERSION=$(pacman -Q qemu-system-x86 | awk '{print $2; exit}') # example command to get version of application here
+VERSION=$(pacman -Q qemu-full | awk '{print $2; exit}') # example command to get version of application here
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://gitlab.com/qemu-project/qemu/-/raw/master/ui/icons/qemu.svg
 export DESKTOP=DUMMY
 export MAIN_BIN=qemu-system-x86_64
+export APPNAME=QEMU
 export STARTUPWMCLASS=qemu
 export DEPLOY_GTK=1
 export GTK_DIR=gtk-3.0
@@ -19,14 +20,7 @@ export DEPLOY_VULKAN=1
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/qemu-system-x86_64 \
-/usr/bin/qemu-system-i386 \
-/usr/bin/qemu-img \
-/usr/bin/qemu-io \
-/usr/bin/qemu-nbd \
-/usr/bin/qemu-x86_64 \
-/usr/bin/qemu-i386 \
-/usr/lib/qemu/*.so
+quick-sharun /usr/bin/qemu-* /usr/lib/qemu/*.so
 
 # Additional changes can be done in between here
 
