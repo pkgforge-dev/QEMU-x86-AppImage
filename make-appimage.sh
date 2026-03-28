@@ -20,7 +20,7 @@ export DEPLOY_VULKAN=1
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/qemu-* /usr/lib/qemu/*.so
+quick-sharun /usr/bin/qemu-* /usr/lib/qemu/*.so /usr/lib/libcapstone.so*
 
 # Additional changes can be done in between here
 
