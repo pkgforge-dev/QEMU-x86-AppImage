@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=QEMU
 Exec=qemu-system-x86_64
-Icon=qemu.svg
+Icon=qemu
 StartupWMClass=qemu
 Comment="A generic and open source machine & userspace emulator and virtualizer"
 Type=Application
