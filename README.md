@@ -27,7 +27,7 @@
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-ndb to mount qemu image
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-io to exercise the QEMU I/O path
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-block-* block drivers included: curl dmg gluster iscsi nfs ssh
-supports -enable-kvm and qemu-audio
+supports -enable-kvm and audio
 ```
 
 ---
