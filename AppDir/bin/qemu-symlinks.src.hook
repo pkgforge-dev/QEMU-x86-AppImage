@@ -10,10 +10,9 @@ _make_symlinks() {
 	for b do
 		ln -sv "$APPIMAGE" "$bindir"/"${b##*/}" 2>/dev/null
 	done
-	set -e
+	exit 0
 }
 
 if [ "$1" = '--make-symlinks' ]; then
 	_make_symlinks
-	exit 0
 fi
