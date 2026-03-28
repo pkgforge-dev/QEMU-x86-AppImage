@@ -17,7 +17,7 @@
 
 </div>
 
-* By default it runs `qemu-system-x86_64` but if needed to emulate other platforms or run other tools like `qemu-img` or `qemu-user`, e.g. you can do the following: 
+* By default it runs `qemu-system-x86_64` but if needed to emulate other platforms (contains all platforms like arm hppa m68k ppc sh4 etc) or run other tools like `qemu-img` or `qemu-user`, e.g. you can do the following: 
 
 ```
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-system-i386 to emulate i386 system
