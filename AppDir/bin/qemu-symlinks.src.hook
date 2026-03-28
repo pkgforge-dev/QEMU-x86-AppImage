@@ -14,4 +14,5 @@ _make_symlinks() {
 
 if [ "$1" = '--make-symlinks' ]; then
 	_make_symlinks
+	exit 0
 fi
