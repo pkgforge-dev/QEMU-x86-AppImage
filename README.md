@@ -17,7 +17,7 @@
 
 </div>
 
-* By default it runs `qemu-system-x86_64` but if needed to emulate i386 or run other tools like `qemu-img` or `qemu-user`, you can do the following: 
+* By default it runs `qemu-system-x86_64` but if needed to emulate other platforms or run other tools like `qemu-img` or `qemu-user`, e.g. you can do the following: 
 
 ```
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-system-i386 to emulate i386 system
@@ -27,7 +27,7 @@
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-ndb to mount qemu image
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-io to exercise the QEMU I/O path
 ./qemu-system-x86_64-*-anylinux-*.AppImage qemu-block-* block drivers included: curl dmg gluster iscsi nfs ssh
-supports -enable-kvm and audio
+supports -enable-kvm, TPM, UEFI, virtiofsd and audio
 ```
 
 ---
