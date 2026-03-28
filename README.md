@@ -17,7 +17,7 @@
 
 </div>
 
-* By default it runs `qemu-system-x86_64` but if needed to emulate i386 or run other tools like qemu-img or qemu-user, you can do the following: 
+* By default it runs `qemu-system-x86_64` but if needed to emulate i386 or run other tools like `qemu-img` or `qemu-user`, you can do the following: 
 
 ```
 ./qemu-system-x86_64-*-anylinux-*.AppImageqemu-system-i386 to emulate i386 system
