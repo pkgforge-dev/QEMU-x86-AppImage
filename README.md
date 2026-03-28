@@ -17,6 +17,17 @@
 
 </div>
 
+* By default it runs `qemu-system-x86_64` but if needed to emulate i386 or run other tools like qemu-img or qemu-user, you can do the following: 
+
+```
+./qemu-system-x86_64-*-anylinux-*.AppImageqemu-system-i386 to emulate i386 system
+./qemu-system-x86_64-*-anylinux-*.AppImage qemu-img to create qemu images
+./qemu-system-x86_64-*-anylinux-*.AppImage qemu-x86_64 to use 64-bit qemu user mode emulation
+./qemu-system-x86_64-*-anylinux-*.AppImage qemu-i386 to use 32-bit qemu user mode emulation
+./qemu-system-x86_64-*-anylinux-*.AppImage qemu-ndb to mount qemu image
+./qemu-system-x86_64-*-anylinux-*.AppImage qemu-io to exercise the QEMU I/O path
+```
+
 ---
 
 AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
