@@ -17,6 +17,8 @@
 
 </div>
 
+### ⚠️ Need to have libcapstone installed to be able to use qemu-userspace ⚠️
+
 * By default it runs `qemu-system-x86_64` but if needed to emulate other platforms (contains all platforms like arm hppa m68k ppc sh4 etc) or run other tools like `qemu-img` or `qemu-user`, e.g. you can do the following: 
 
 ```
