@@ -27,6 +27,7 @@ quick-sharun \
 	/usr/bin/quickget    \
 	/usr/bin/quickreport \
 	/usr/share/edk2      \
+	/usr/share/qemu		 \
 	/usr/lib/binfmt.d	 \
 	/usr/lib/libcapstone.so*
 
